@@ -69,28 +69,46 @@ transform: translate(-50%);
     border: 1px solid #ddd;
     border-radius: 10px;
     width: 300px;
-}
-
-#search-input {
+  }
+  
+  #search-input {
     width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-}
-
-#search-button {
+    border-radius: 10px;
+  }
+  
+  #search-button {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    
-}
-
-#search-button:hover {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  
+  #search-button:hover {
     background-color: #444;
-}
+  }
+  
+  /* 추가된 코드 */
+  #search-button::before {
+    content: "\1F50D"; /* 돋보기 아이콘 */
+    font-size: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  
+  #search-button span {
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+  }
 
 #search-results {
     padding: 20px;
