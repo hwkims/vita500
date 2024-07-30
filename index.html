@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비타 500</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="notification-button">
+        <a href="https://www.youtube.com/@Kwangdong?view_as=subscriber?sub_confirmation=1" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b4948" stroke-width="2">
+            <path d="M9.96706 18.2001V19.9334C9.96706 21.6087 11.3251 22.9668 13.0004 22.9668C14.6757 22.9668 16.0337 21.6087 16.0337 19.9334V18.2001M6.69736 8.90313C6.69736 5.42206 9.51932 2.6001 13.0004 2.6001C16.4815 2.6001 19.3034 5.42206 19.3034 8.90313V13.0001L22.1004 15.6001V18.6334H3.90039V15.6001L6.69736 13.0001V8.90313Z"></path>
+        </svg>
+        </a>
+    </div>
+
+<div class="search-button">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b4948" stroke-width="2">
+        <circle cx="11" cy="11" r="8" fill="#fff"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+</div>
+    <!-- Modal popup -->
+    <div class="modal" id="search-modal">
+        <div class="modal-content">
+            <input type="search" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+            <div id="search-results"></div>
+        </div>
+    </div>
+
+
+    <script>
+        const searchButton = document.querySelector('.search-button');
+        const searchModal = document.querySelector('#search-modal');
+        const searchInput = document.querySelector('#search-input');
+        const searchResults = document.querySelector('#search-results');
+
+        searchButton.addEventListener('click', () => {
+            searchModal.style.display = 'block';
+        });
+
+        searchModal.addEventListener('click', (e) => {
+            if (e.target === searchModal) {
+                searchModal.style.display = 'none';
+            }
+        });
+
+        searchInput.addEventListener('input', () => {
+            // Add your search logic here
+            console.log('Search input changed:', searchInput.value);
+        });
+    </script>
+
+<div class="logo">
+    <a href="index.html" class="logo-link">
+        <img src="logo_h.png" alt="logo">
+    </a>
+</div>
+
+<div class="container">
+    <div class="video_box">
+      <video muted autoplay loop>
+        <source src="videoplayback.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="content">
+
+      <img class="vita500img" src="vita500.jpg" alt="비타">
+      <img class="vita500img" src="m_img02_zero.jpg" alt="비타">
+      <img class="vita500img" src="m_img01.jpg" alt="비타">
+
+
+
+
+    </div>
+  </div>
+</body>
+</html>
