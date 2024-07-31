@@ -25,8 +25,8 @@
     <!-- Modal popup -->
     <div class="modal" id="search-modal">
         <div class="modal-content">
-            <input type="search" id="search-input" placeholder="검색어를 입력하세요">
-            <a href="https://kwangdongmart.com/"><button id="search-button">검색</button></a>
+            <input type="search" id="search-input" placeholder="검색어를 입력하세요" autofocus>
+            <button id="search-button">검색</button>
             <div id="search-results"></div>
         </div>
     </div>
@@ -34,14 +34,20 @@
 
     <script>
         const searchButton = document.querySelector('.search-button');
+        const searchButton2 = document.querySelector('#search-button');
         const searchModal = document.querySelector('#search-modal');
         const searchInput = document.querySelector('#search-input');
         const searchResults = document.querySelector('#search-results');
 
         searchButton.addEventListener('click', () => {
-            searchModal.style.display = 'block';
-        });
+            searchModal.style.display = 'block';  });
 
+
+            searchButton2.addEventListener('click', () => {
+  const searchText = searchInput.value;
+  const searchUrl = `https://kwangdongmart.com/shop/search?searchText=${encodeURIComponent(searchText)}`;
+  window.open(searchUrl, '_blank');
+});
         searchModal.addEventListener('click', (e) => {
             if (e.target === searchModal) {
                 searchModal.style.display = 'none';
@@ -52,6 +58,13 @@
             // Add your search logic here
             console.log('Search input changed:', searchInput.value);
         });
+        searchInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    const searchText = searchInput.value;
+    const searchUrl = `https://kwangdongmart.com/shop/search?searchText=${encodeURIComponent(searchText)}`;
+    window.open(searchUrl, '_blank');
+  }
+});
     </script>
 
 <div class="logo">
