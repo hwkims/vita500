@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,input,textarea,select,button,th,td,blockquote {margin:0;padding:0}
+ul,li,ol {list-style:none}
+img {max-width:100%;border:0;vertical-align:top}
+a {text-decoration:none}
+iframe {border:none}
+
+body {width:780px;font-family:'Nanum Gothic','맑은 고딕';}
+.blind {visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0;}
+.btn {display:inline-block;border:none;background:none}
+.sprite {background:url(/static/mw/images/renewal/sprite.png) no-repeat;text-indent:-9999px}
+.sprite--link {background:url(/static/mw/images/renewal/sprite.png) no-repeat}
+.slider-btn {display:inline-block;position:absolute;top:50%;margin-top:-20px}
+.slider-btn a {display:inline-block;width:24px;height:40px;text-indent:-9999px}
+.slider-btn__prev {left:20px;width:24px;height:40px;background-position:-56px 0}
+.slider-btn__next {right:20px;width:24px;height:40px;background-position:-82px 0}
+.slider-btn__prev--w {background-position:-108px 0}
+.slider-btn__next--w {background-position:-134px 0}
+.table {display:table;width:100%;height:100%}
+.cell {display:table-cell;vertical-align:middle}
+.tab-nav {overflow:hidden}
+.tab-nav li {float:left;width:50%;background:#f0f0f0;text-align:center;line-height:70px}
+.tab-nav li a {display:block;border-top:1px solid #c8c8c8;font-size:30px;color:#4c4d4f}
+.tab-nav li.active {background:#ffffff}
+.tab-nav li.active a {display:block;border-width:3px}
+.tab-nav li.active.f  a {border-color:#3b5998;color:#3b5998}
+.tab-nav li.active.y  a {border-color:#cd201f;color:#cd201f}
+.tab-nav li.active.i  a {border-color:#bd0798;color:#bd0798}
+.tab-item {padding:30px 20px;padding-bottom:40px;background:#fff}
+.tab-item__wrap .bx-pager.bx-default-pager  {bottom:-30px}
+/* wrap */
+#r-wrap {padding-bottom:102px}
+.r-header {position:relative;height:160px;background:url(/static/mw/images/renewal/bg_header.png) no-repeat center top;z-index:30}
+.r-header__logo {width:320px ;position:relative; z-index:30}
+.r-header__search {display:none;position:relative;z-index:30}
+.btn-search {position:absolute;top:0;right:134px;z-index:30}
+.btn-menu {position:absolute;top:0;right:0;z-index:30}
+.r-header__sub {display:none;position:relative;z-index:30;top:68px}
+.r-header__gnb {background:#fff}
+.r-header__gnb > li > span {display:block;position:relative;padding:0 37px;border-bottom:1px solid #e5e5e5;font-size:37px;color:#231f20;line-height:118px;cursor:pointer}
+.r-header__gnb > li > span:before {content:'';position:absolute;top:50%;right:37px;width:44px;height:25px;margin-top:-8px;background:url(/static/mw/images/renewal/sprite.png) no-repeat -120px -42px}
+.r-header__gnb > li > a {display:block;padding:0 37px;border-bottom:1px solid #e5e5e5;font-size:38px;color:#231f20;line-height:118px}
+.r-header__gnb > li.active > span {border-bottom:2px solid #ee3212;color:#e63c2e}
+.r-header__gnb > li.active > span:before {background-position:-166px -42px}
+
+.h_opacity {position:fixed; width:100%;height:0;background:#000;opacity:0; z-index:20}
+.snb {display:none}
+.snb span {display:block;padding:0 37px;border-bottom:1px solid #c8c8c8;font-size:34px;color:#4d4d4f;line-height:88px}
+.snb-list {overflow:hidden;padding:0 37px;border-bottom:1px solid #c8c8c8;background:#f4f4f4}
+.snb-list li {float:left;width:33.3333%}
+.snb-list li a {display:block;position:relative;padding-left:36px;font-size:26px;color:#888;line-height:110px;letter-spacing:-1px}
+.snb-list li.l a {padding:20px 0;padding-left:36px;line-height:35px}
+.snb-list li a:before {content:'';position:absolute;top:50%;left:-1px;width:2px;height:24px;margin-top:-12px;background:#c8c8c8}
+.snb-list li:nth-child(3n+1) a {padding-left:0}
+.snb-list li:nth-child(3n+1) a:before {content:none}
+.snb-list li:first-child a {padding-left:0}
+.snb-list li:first-child a:before {content:none}
+.r-header__lnb {overflow:hidden;background:#98928a}
+.r-header__lnb a {display:block;float:left;width:50%;font-size:36px;color:#fff !important;line-height:120px;text-align:center}
+.main-visual {margin-top:30px;margin-bottom:-2px}
+.main-visual img {vertical-align:top}
+.main-visual .bx-wrapper .bx-pager {width:auto;bottom:37px;left:65px;text-align:left}
+.main-visual .bx-wrapper .bx-pager.bx-default-pager a {width:25px;height:22px;background:url(/static/mw/images/renewal/sprite.png) no-repeat}
+.main-visual .bx-wrapper .bx-pager.bx-default-pager a.active,
+.main-visual .bx-wrapper .bx-pager.bx-default-pager a:hover {background-position:-27px 0}
+.main-product {padding-bottom:62px}
+.main-tit  {height:78px;margin-bottom:46px;background:url(/static/mw/images/renewal/bg_maintit.png) no-repeat center top;font-size:42px;line-height:78px;text-align:center;color:#fff;font-weight:normal;letter-spacing:-1px}
+.main-tit--long {background:url(/static/mw/images/renewal/bg_maintit2.png) no-repeat center top}
+.main-product__wrap {position:relative}
+.main-product__slider > li {height:548px;border:1px solid #e6e6e6;box-sizing:border-box;border-bottom:3px solid #e6e6e6}
+.main-product__slider .img {height:250px;margin:0 auto;margin-bottom:24px;text-align:center}
+.main-product__slider .img img {width:180px}
+.main-product__slider .tit {margin-top:16px;font-size:30px;font-weight:bold;color:#4c4d4f;text-align:center}
+.main-product__slider .cat {font-size:18px;color:#a8a9ac;text-align:center}
+.main-product__slider .cat:before {content:'';display:block;width:34px;height:4px;margin:0 auto;margin-bottom:10px;background:#b6b6b6}
+.main-product__slider  .common-list li a {font-size:22px}
+.common-list {width:210px;margin:0 auto}
+.common-list li  {margin-top:20px}
+.common-list li a {display:block;position:relative;padding-right:48px;border-bottom:3px solid #4d4d4f;font-size:27px;color:#4d4d4f;line-height:50px}
+.common-list li a:before {content:'';position:absolute;right:0;top:50%;width:44px;height:40px;margin-top:-20px;background:url(/static/mw/images/renewal/sprite.png) no-repeat 0 -24px}
+.main-all {padding-bottom:60px;background:#e8e3dc}
+.main-all__list {text-align:center}
+.main-all__list li {display:inline-block;padding:10px 35px;vertical-align:top}
+.main-news {padding:92px 37px;background:#f0f0f0}
+.main-news__wrap {margin-bottom:45px;text-align:center;font-size:0}
+.main-news__item {display:inline-block;position:relative;width:340px;height:340px;margin-left:13px}
+.main-news__item a {display:block;position:absolute;top:35px;left:35px;width:90%;height:90%;font-size:40px;color:#fff;text-align:left}
+.main-news__item:first-child {margin-left:0;margin-right:13px}
+.main-news__event {position:relative}
+.main-news__event .bx-wrapper .bx-pager.bx-default-pager a {background:#fff;opacity:0.6}
+.main-news__event .bx-wrapper .bx-pager.bx-default-pager a.active,
+.main-news__event .bx-wrapper .bx-pager.bx-default-pager a:hover {opacity:1}
+.main-social {padding:60px 37px;padding-bottom:80px;background:#f0f0f0}
+.main-social__tit {margin-bottom:25px;font-size:38px;color:#4c4d4f;font-weight:normal;text-align:center}
+.tab-item__item:after {content:'';display:block;clear:both}
+.tab-item__item .l {float:left;width:60%}
+.tab-item__item .r {float:right;width:36%}
+.tab-item__item .cat {position:relative;margin-bottom:20px;padding-left:40px;font-size:22px;color:#3b5998;line-height:40px}
+.tab-item__item .cat:before {content:'';position:absolute;top:0;left:0;width:34px;height:40px;background:url(/static/mw/images/renewal/sprite.png) no-repeat -162px 0}
+.tab-item__item .desc {height:102px;overflow:hidden;font-size:22px;word-break:keep-all;line-height:34px}
+.tab-item__item .desc a {display:block;overflow:hidden;font-size:22px;color:#4c4d4f;line-height:34px}
+.tab-item__item .desc a.hashtag {height:auto;font-size:20px;line-height:30px}
+.tab-item__item .hash {overflow:hidden;height:68px;margin-top:20px;line-height:34px}
+.tab-item__item .img {text-align:right}
+.tab-item__item .hash span {display:block}
+.tab-item__item .hash a {color:#365899;font-size:22px}
+.tab-item__slider2 .tab-item__item .l {float:left;width:36%}
+.tab-item__slider2 .tab-item__item .r {float:right;width:60%}
+.tab-item__slider2 .tab-item__item .cat:before  {background-position:-198px 0}
+.tab-item__slider2 .tab-item__item .cat {color:#cd201f}
+.tab-item__item .cat.is:before  {background-image:url('/static/cw/images/renewal/ico_social_insta.png'); background-position:center; background-repeat:no-repeat;}
+.tab-item__item .cat.is {color:#bd0798}
+.main-social .tab-item .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {bottom:-20px}
+.r-footer {padding:0}
+.footer-menu {background:#252222;text-align:center}
+.footer-menu:after {content:'';display:block;clear:both}
+.footer-menu__item {position:relative;float:left;width:50%;color:#fff}
+.footer-menu__current {display:inline-block;min-width:170px;position:relative;padding-right:60px;line-height:74px;font-size:26px;cursor:pointer}
+.footer-menu__current:before {content:'';position:absolute;top:50%;right:0;width:44px;height:40px;margin-top:-20px;background:url(/static/mw/images/renewal/sprite.png) no-repeat -234px 0}
+.footer-menu__sub {display:none;position:absolute;bottom:74px;width:100%;padding:10px 0;background:#fff}
+.footer-menu__sub li {padding-left:50px;padding-right:10px;text-align:left}
+.footer-menu__sub li a {display:block;font-size:26px;line-height:54px;color:#4d4d4f}
+.brand-menu__sliderwrap {position:relative;width:670px;margin:0 auto}
+.brand-menu__left {position:absolute;width:20px;top:50%;left:-42px;margin-top:-18px}
+.brand-menu__right {position:absolute;width:20px;top:50%;right:-42px;margin-top:-18px}
+.brand-menu__sub .brand-menu__sliderwrap a {margin:0}
+.footer-menu__item.active {background:#f3f3f3}
+.footer-menu__item.active .footer-menu__current {color:#4f4f4f}
+.footer-menu__item.active .footer-menu__current:before {background-position:-280px 0}
+.footer-menu__item.active .footer-menu__sub {display:block;background:#f3f3f3}
+.footer-info {padding:78px 0;background:#292929;text-align:center}
+.footer-link a {position:relative;padding:0 10px;font-size:24px;color:#fff !important}
+.footer-link a.footer-policy {color: #ee3212 !important;}
+.footer-link a:before {content:'';position:absolute;top:2px;left:0;width:2px;height:25px;background:#494949}
+.footer-link a:first-child:before{content:none}
+.footer-link a:first-child {padding-left:0}
+.footer-link a:last-child {padding-right:0}
+.footer-copyright {margin-top:30px;font-size:22px;color:#b2b2b2;letter-spacing:-1px}
+.brand-menu {position:fixed;bottom:0;left:0;width:780px;padding:4px 0;border-top:2px solid #ef3212;background:#eaeaeb;text-align:center;z-index:2}
+.brand-menu:after {content:'';display:block;clear:both}
+.brand-menu__item {float:left;width:33.3333333%;color:#ee3212}
+.brand-menu__current {display:inline-block;position:relative;width:100%;box-sizing:border-box;padding-left:30px;padding-right:55px;line-height:46px;font-size:30px;cursor:pointer;text-align:center}
+.brand-menu__current:before {content:'';position:absolute;top:50%;right:30px;width:36px;height:22px;margin-top:-11px;background:url(/static/mw/images/renewal/sprite.png) no-repeat -44px -42px}
+.brand-menu__item:last-child .brand-menu__current {padding-left:15px}
+.brand-menu__item:last-child .brand-menu__current:before {right:15px}
+.brand-menu__sub {display:none;position:absolute;bottom:102px;left:0;width:100%;padding:14px 0;border-top:2px solid #ee3212;background:#eaeaeb;text-align:center}
+.brand-menu__sub a {margin:0 10px}
+.brand-menu__sub .bx-viewport {min-height:132px !important}
+.brand-menu__sub .bx-wrapper {min-height:132px !important}
+.brand-menu__slider li {width:115px !important}
+.brand-menu__close {display:none;position:absolute;top:-35px;left:0;width:100%;border-bottom:2px solid #ee3212;text-align:center;cursor:pointer}
+.brand-menu__item.active .brand-menu__sub {display:block}
+.brand-menu__item.active .brand-menu__current:before {background:url(/static/mw/images/renewal/sprite.png) no-repeat -82px -42px}
+.btn-top {position:fixed;bottom:140px;right:30px;z-index:1}
+.r-header__search {padding:26px 37px;background:#f0f0f0}
+.r-header__search-wrap {display:block;position:relative;padding-top:15px;padding-bottom:15px;padding-left:25px;padding-right:218px;background:#fff;border-radius:45px}
+.ipt-search {display:inline-block;height:55px;width:100%;border:none;font-size:26px}
+.ipt-searchsubmit {position:absolute;top:0;right:0;width:210px;height:100%;border:7px solid #ee3212;border-radius:45px;background:#fff;font-size:30px;color:#ee3212;letter-spacing:-1px;box-sizing:border-box;line-height:1.4;box-shadow:none}
+
+.layer {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:50}
+.layer-wrap {position:relative;margin:0 35px;padding:36px 42px;background:#fff;border-top:4px solid #8f9f3d}
+.layer--vgram__img {padding:70px 100px}
+.layer--vgram__tit {border-bottom:1px solid #a8a9ac;font-weight:bold;line-height:58px;color:#333}
+.layer--vgram__btn {position:absolute;top:50%;width:66px;height:66px;margin-top:-33px;background-color:#8f9f3d}
+.layer--vgram__btn--prev {left:36px;background-position:0 -123px}
+.layer--vgram__btn--next {right:36px;background-position:-63px -123px}
+.layer-footer {text-align:center}
+.layer--vgram__close {display:inline-block;width:284px;height:100px;background:#8f9f3d;line-height:100px;text-align:center;font-weight:bold;font-size:34px;color:#fff;cursor:pointer}
+
+
+.set_title_bg {top:170px !important}
+
+
+.logo-animation-container {
+    position: absolute;
+    background-color: black;
+}
+
+.logo-animation-container a {
+    display: block;
+    width: 100%;
+}
+
+.logo-slide-wrap {
+    width: 100%;
+}
+
+.logo-slide {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.logo-slide .logo-image {
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    display: flex;
+
+    opacity: 1;
+}
+
+.logo-slide .logo-image.end {
+		display:none;
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    display: flex;
+    opacity: 0;
+    border: 0px;
+}
+
+.original {
+    /*animation: first 9s infinite ease;*/
+}
+
+.end {
+    /*animation: end 9s infinite ease;*/
+}
+
+@keyframes first {
+    0% {
+         opacity: 1;
+    }
+    10%, 50% {
+        opacity: 0;
+    }
+    75%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes end {
+    0% {
+        opacity: 0;
+    }
+    25%, 50% {
+        opacity: 1;
+    }
+    60%, 100% {
+        opacity: 0;
+    }
+}

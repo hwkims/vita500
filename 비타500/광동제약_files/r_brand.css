@@ -1,0 +1,474 @@
+@charset "UTF-8";
+.r-container {position:relative;margin-top:30px}
+.brand-tab {overflow:hidden;padding:0 25px;border-top:3px solid #c8c8c8;border-bottom:3px solid #c8c8c8;text-align:center;font-size:0}
+.brand-tab a {display:inline-block;padding:0 15px;font-size:28px;color:#4c4d4f;line-height:92px;text-align:center;font-weight:bold;letter-spacing:-0.5px;vertical-align:top}
+.brand-tab a.active {border-bottom:10px solid #f17f1d;color:#f17f1d;box-sizing:border-box;line-height:82px}
+.brand-tab--long {padding:0 10px}
+.brand-tab--long a {padding:0 9px}
+
+
+.brand-tab.v500 {overflow:hidden;padding:0 0px;border-top:3px solid #c8c8c8;border-bottom:3px solid #c8c8c8;text-align:center;font-size:0}
+.brand-tab.v500 a {display:inline-block;padding:0 10px;font-size:28px;color:#4c4d4f;line-height:92px;text-align:center;font-weight:bold;letter-spacing:-1px;vertical-align:top}
+
+
+/*visual*/
+.b-visual {position:relative}
+.visual-menu {position:absolute;left:36px;bottom:98px}
+.visual-menu li {margin-top:10px}
+.visual-menu a {display:block;position:relative;width:185px;padding-right:46px;border-bottom:2px solid #fff;line-height:58px;color:#fff;box-sizing:border-box}
+.visual-menu a:before {content:'';position:absolute;top:50%;right:0;width:44px;height:40px;margin-top:-20px;background:url(/static/mw/images/renewal/sprite.png) no-repeat -234px 0}
+/*content*/
+.b-section, .b-content {position:relative}
+.b-content__tit {margin-bottom:35px;padding:0 37px;font-size:44px;color:#333;letter-spacing:-1px}
+.b-content__tit strong {font-weight:bold;color:#fff}
+.b-content__tit:after {content:'';display:block;width:33px;height:4px;margin-top:10px;background:#fff}
+.b-content__desc {position:relative;padding:0 37px;font-size:33px;line-height:50px;color:#333;word-break:keep-all;letter-spacing:-1px}
+.b-content__desc-bg {position:absolute;bottom:0;right:37px}
+
+.b-launch {padding-bottom:80px;padding-top:55px;background:url(/static/mw/images/renewal/brand/vita500/bg_launch.jpg) no-repeat center top;background-size:cover}
+.b-launch__tit {font-size:36px;color:#333;text-align:center;font-weight:normal;line-height:1.2}
+.b-launch__img {text-align:center}
+
+.b-concept {padding-bottom:76px;padding-top:176px;background:url(/static/mw/images/renewal/brand/vita500/bg_concept.jpg) no-repeat center top;background-size:cover}
+.b-star {padding-bottom:76px;padding-top:158px;background:url(/static/mw/images/renewal/brand/vita500/bg_star.jpg) no-repeat right top;background-size:cover}
+.b-star__list {padding:0 37px}
+.b-star__list li strong {display:block;margin-bottom:12px;font-weight:bold;color:#5e350d;font-size:32px}
+.b-star__list li {padding:32px 0;border-bottom:3px solid #e7ca30;font-size:26px;line-height:38px;word-break:keep-all;letter-spacing:-1px;color:#5e350d}
+.b-star__list li:first-child {border-top:3px solid #e7ca30}
+.b-vision {padding-bottom:160px;padding-top:130px;background:url(/static/mw/images/renewal/brand/vita500/bg_vision.jpg) no-repeat center top;background-size:cover}
+/*history*/
+.b-btns {position:absolute;top:150px;left:5%;width:90%;z-index:5}
+.b-history {padding:56px 0;padding-bottom:150px;background:#f4f4f4}
+.b-history .b-common__tab {margin-left: 37px;margin-right:37px}
+.b-history__tit {margin-bottom:35px;font-size:36px;color:#333;text-align:center;font-weight:normal}
+.b-common__tab {position:relative;margin-bottom:40px}
+.b-common__current {display:block;position:relative;padding:0 26px;border-bottom:2px solid #333;line-height:90px;font-size:40px;color:#333;font-weight:bold}
+.b-common__current:before {content:'';position:absolute;top:50%;right:26px;width:59px;height:46px;margin-top:-23px;background:url(/static/mw/images/renewal/sprite.png) no-repeat -349px -96px}
+.b-common__tabwrap {display:none;position:absolute;top:90px;left:0;width:100%;max-height:400px;overflow-y:scroll;overflow-x:hidden;z-index:20}
+/*.b-common__tablist {padding:0 37px}*/
+.b-common__tablist li {background:#fff}
+.b-common__tablist li a {display:block;padding-left:26px;font-size:40px;color:#333;font-weight:bold;line-height:80px}
+.b-common__tab.active .b-common__current {background:#fff;border-bottom:2px solid #fff;color:#ff9d14}
+.b-common__tab.active .b-common__current:before {background-position:-349px -143px}
+.b-common__tab.active .b-common__tabwrap {display:block}
+.b-history__content {position:relative}
+.b-history__content:before {content:'';position:absolute;top:0;left:94px;width:3px;height:100%;background:url(/static/mw/images/renewal/brand/bg_history.png) no-repeat center top;background-size:auto 100%;z-index:1;}
+.b-history__content > li {position:relative;padding-top:62px;padding-left:194px;padding-right:37px}
+.b-history__content > li:last-child {padding-bottom:50px}
+.b-history__content .i {position:absolute;top:62px;left:37px;z-index:2}
+.b-history__content .y {font-size:40px;font-weight:bold;color:#f17f1d;line-height:132px}
+.b-history__content .c li {position:relative;margin-top:8px;padding-left:10px;font-size:24px;color:#333;line-height:38px}
+.b-history__content .c li:first-child {margin-top:0}
+.b-history__content .c li:before {content:'';position:absolute;top:17px;left:0;width:5px;height:5px;border-radius:50%;background:#333}
+/*campaign*/
+.b-campaign {padding:50px 37px;padding-top:100px;background:url(/static/mw/images/renewal/brand/vita500/bg_campaign01.jpg) no-repeat center bottom;background-color:#e5d8c5}
+.b-campaign__highdesc {padding-bottom:160px;font-size:30px;color:#4f2007;line-height:44px;word-break:keep-all;letter-spacing:-0.5px}
+.b-campicture {padding:60px 37px;padding-top:120px}
+.b-campicture__top {position:relative;margin-bottom:20px}
+.b-campicture__wrap {position:relative;margin-top:40px;padding:0 63px}
+.b-campicture__tit {font-size:40px;font-weight:bold;color:#f17f1d}
+.bd-event__cat {position:absolute;bottom:0;right:0;width:228px;height:68px;font-size:32px}
+.bd-event__cat-tit {display:block;position:relative;height:68px;padding-left:6px;padding-right:40px;border-bottom:2px solid #333;color:#333;line-height:66px;cursor:pointer;font-weight:bold;}
+.bd-event__cat-tit:before {content: '';position:absolute;top:50%;right:3px;width:38px;height:34px;margin-top:-17px;
+    background: url(../../images/renewal/sprite.png) no-repeat -212px -78px}
+.bd-event__cat.active {background:#fff}
+.bd-event__cat.active .bd-event__cat-tit {border-color:#fff;color:#ff9d14}
+.bd-event__cat.active .bd-event__cat-list {background:#fff}
+.bd-event__cat.active .bd-event__cat-tit:before {background: url(/static/mw/images/renewal/sprite.png) no-repeat -252px -78px}
+.bd-event__cat-list {display:none}
+.bd-event__cat-list li {padding-left:6px;line-height:60px}
+.bd-event__cat-list li a {font-size:32px;color:#333}
+.slider__btn-small {position:absolute;top:50%;margin-top:-26px;width:54px;height:54px}
+.slider__btn-small  a {display:block;width:54px;height:54px;text-indent:-9999px}
+.slider__btn-small--prev {left:0;background-position:0 -67px}
+.slider__btn-small--next {right:0;background-position:-56px -67px}
+.b-campicture__big {text-align:center}
+.bd-event__gal-smallslider li img {width:100%}
+.b-campicture__big img {width:100%}
+.b-campicture__subtit {margin-bottom:40px;font-size:32px;color:#333}
+.b-cammovie {padding:157px 37px 160px 37px;background:url(/static/mw/images/renewal/brand/vita500/bg_movie.jpg) no-repeat center top;background-size:cover}
+.b-sympointro {height:1179px;padding:50px 37px;box-sizing:border-box;background:url(/static/mw/images/renewal/brand/vita500/tit_sympo.jpg) no-repeat center top;background-size:780px auto}
+.b-sympo {position:relative;padding:50px 37px;padding-bottom:150px}
+.b-sympo__top {position:relative;margin-bottom:30px;margin-top:86px;padding-bottom:80px}
+.b-sympo__box strong {display:block;font-size:34px;color:#f17f1d;font-weight:bold}
+.b-sympo__year .bd-event__cat {font-size:28px}
+
+.bd-event__link {position:absolute;bottom:0;right:250px;width:263px;height:68px;font-size:28px}
+.bd-event__link a {display:block;position:relative;height:68px;padding-left:3px;padding-right:25px;border-bottom:2px solid #5e350d;color:#5e350d;line-height:66px;letter-spacing:-1px;font-weight:bold}
+.bd-event__link a:before {content: '';position: absolute;top:18px;right:6px;width:25px;height:30px;background: url(../../images/renewal/sprite.png) no-repeat -112px -67px;}
+.b-toon {padding:50px 37px;padding-top:100px;padding-bottom:150px;background:url(/static/mw/images/renewal/brand/vita500/bg_toon.gif)}
+.b-toon__img {text-align:center}
+.b-toon__wrap {display:none}
+.b-toon__wrap.active {display:block}
+.b-toon__wrap  img {width:100%}
+.b-toon__tab {overflow:hidden;border-left:1px solid #c7b8ab;background:#fff}
+.b-toon__tab li {float:left;width:25%;line-height:110px;box-sizing:border-box}
+.b-toon__tab li a {display:block;margin-left:-1px;border:1px solid #c7b8ab;text-align:center;font-size:32px;color:#5e350d}
+.b-toon__tab li.active {background:#fff000}
+.b-toon__tab li.active a {font-weight:bold}
+/*media*/
+.b-media {padding:50px 37px;padding-bottom:150px;background:#fff}
+.b-media__list {overflow:hidden;margin-left:-32px}
+.b-media__list li {float:left;width:50%;margin-top:50px;padding-left:32px;box-sizing:border-box}
+.b-media__list li a, .b-media__list li a span {display:block}
+.b-media__list li a {padding-bottom:25px;border:1px solid #ccc}
+.b-media__list li  .i {position:relative;text-align:center}
+.b-media__list li  .i img {width:100%;height:244px}
+.b-media__list li  .i:before {content:'';position:absolute;top:50%;left:50%;width:102px;height:102px;margin-left:-51px;margin-top:-51px;background:url(/static/mw/images/renewal/brand/btn_play.png) no-repeat center top}
+.b-media__list li  .t {overflow:hidden;height:76px;padding:25px;padding-bottom:0;font-size:28px;color:#000000;line-height:38px;text-align:center;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.b-media__list--print li  .i:before {background:url(/static/mw/images/renewal/brand/btn_plus.png) no-repeat center top}
+.b-media__list--print li  .i img {height:460px}
+.page-navi {margin-top:40px;text-align:center;font-size:0}
+.page-navi li {display:inline-block;width:80px;height:80px;margin-left:-1px;border:1px solid #c7c7c7;font-size:30px;color:#888888;line-height:30px;vertical-align:middle;line-height:80px}
+.page-navi li.on {background:#f17f1d;color:#fff}
+.b-media__view-tit {overflow:hidden;padding:0 36px;border-top:4px solid #333;border-bottom:4px solid #c8c8c8;font-size:32px;color:#000;line-height:106px;text-overflow:ellipsis;white-space:nowrap}
+.b-media__view-img {padding:60px 40px;text-align:center}
+.b-media__view-nav {border-top:3px solid #c8c8c8}
+.b-media__view-nav {border-bottom:3px solid #000}
+.b-media__view-nav li {overflow:hidden;border-top:3px solid #ececec;font-size:26px;line-height:102px;text-overflow:ellipsis;white-space:nowrap}
+.b-media__view-nav li  span {color:#000}
+.b-media__view-nav li  a {color:#666}
+.b-media__view-nav li  a b {padding:0 10px}
+.b-media__btn {margin-top:40px;text-align:center}
+.b-media__btn a {display:inline-block;width:284px;height:100px;background:#f17f1d;font-size:34px;color:#fff;font-weight:bold;line-height:100px;}
+.b-toon__btn {margin-top:40px;text-align:center}
+.b-toon__btn a {display:inline-block;width:284px;height:100px;margin:0 10px;background:#f17f1d;text-align:center;line-height:100px;color:#fff;font-size:34px;font-weight:bold}
+.b-toon__btn a i {display:inline-block;width:21px;height:35px;background-position:-162px -67px;vertical-align:middle}
+.b-toon__btn a:first-child i {background-position:-139px -67px}
+.common-bg {position:relative;height:120px;width:100%;background:#fff}
+.common-bg:before {content:'';position:absolute;top:-51px;right:0;width:321px;height:51px;background:url(/static/mw/images/renewal/brand/vita500/bg_white.png) no-repeat center top}
+.common-bg--gray {background:#f4f4f4}
+.common-bg--gray:before {background:url(/static/mw/images/renewal/brand/vita500/bg_gray.png) no-repeat center top}
+/* 비타500 */
+.r-container--vita500 .b-launch__tit ,.r-container--vita500 .b-content__tit,.r-container--vita500 .b-content__desc,.r-container--vita500 .b-history__tit,.r-container--vita500 .b-history__content .c li ,.r-container--vita500 .b-common__current,.r-container--vita500 .b-common__tablist li a, .r-container--vita500 .bd-event__cat-list li a, .r-container--vita500 .b-campicture__subtit {color:#5e350d}
+.r-container--vita500 .b-content__tit strong {color:#f17f1d}
+.r-container--vita500 .b-content__tit:after {background:#f17f1d}
+.r-container--vita500 .b-common__tab .b-common__current:before {background-position:-349px 0}
+.r-container--vita500 .b-common__tab.active .b-common__current:before {background-position:-349px -48px}
+.r-container--vita500 .b-history__content > li:nth-child(5) {padding-bottom:150px}
+.r-container--vita500 .b-history__content > li:nth-child(5):before {content:'';position:absolute;bottom:0;right:0;width:321px;height:51px;background:url(/static/mw/images/renewal/brand/vita500/bg_white.png) no-repeat center top}
+.r-container--vita500 .b-history__content > li:nth-child(n+6) {background:#fff}
+.r-container--vita500 .b-history__content > li:nth-child(10) {padding-bottom:140px}
+.r-container--vita500 .b-history__content > li:nth-child(10):before {content:'';position:absolute;bottom:0;right:0;width:321px;height:51px;background:url(/static/mw/images/renewal/brand/vita500/bg_gray.png) no-repeat center top}
+.r-container--vita500 .b-history__content > li:nth-child(n+11) {background:#f4f4f4}
+.r-container--vita500 .b-history__content .c li:before  {background:#5e350d}
+.r-container--vita500 .visual-menu {display:none}
+.r-container--vita500 .bd-event__cat-tit  {border-color:#5e350d;color:#5e350d}
+.r-container--vita500 .bd-event__cat-tit:before {background-position:-212px -42px}
+.r-container--vita500 .bd-event__cat.active .bd-event__cat-tit:before {background-position:-252px -42px}
+
+.r-container--vita500 .b-media__view-tit {border-top:4px solid #f17f1d}
+
+
+.b-content__tit.rplus {color:#ffda48}
+.r-container--vita500 .b-content__tit.rplus:after {background:#ffda48}
+.b-content__desc.rplus {color:#fff;padding-bottom:10%}
+.b-concept.rplus {padding-bottom:76px;padding-top:176px;background:url(/static/mw/images/renewal/brand/vita500/bg_concept_p.png) no-repeat center -1px;background-size:cover}
+.b-content__tit.rplus2 {color:#8c3b00;margin-bottom:8%}
+.r-container--vita500 .b-content__tit.rplus2:after {background:#8c3b00;}
+
+
+/* 옥수수수염차 */
+.r-container--ok .b-content__tit strong,.r-container--ok .b-history__content .y,.r-container--ok .b-common__tab.active .b-common__current,.r-container--ok .bd-event__cat.active .bd-event__cat-tit,.r-container--ok .b-campicture__tit {color:#8f9f3d}
+.r-container--ok .visual-menu a {border-bottom:2px solid #333;color:#333}
+.r-container--ok .visual-menu a:before {background-position:0 -24px}
+/*.r-container--vita500 .visual-menu a {border-bottom:2px solid #333;color:#333}
+.r-container--vita500 .visual-menu a:before {background-position:0 -24px}*/
+.r-container--ok .b-content__tit:after {background:#8f9f3d}
+.r-container--ok .brand-tab a.active {border-color:#8f9f3d;color:#8f9f3d}
+.r-container--ok .b-launch {background-image:url(/static/mw/images/renewal/brand/oksusu/bg_launch.jpg)}
+.r-container--ok .b-concept {background-image:url(/static/mw/images/renewal/brand/oksusu/bg_concept.jpg)}
+.r-container--ok .b-star {padding-bottom:150px;background-image:url(/static/mw/images/renewal/brand/oksusu/bg_star.jpg)}
+.r-container--ok .b-content__desc {font-size:30px}
+.b-content__okinfo {padding:0 37px}
+.b-content__okinfo .i {text-align:center}
+.b-content__okinfo .d {font-size:30px;color:#333;line-height:44px}
+.r-container--ok .b-launch .b-content__tit strong {color:#fff}
+.r-container--ok .b-history {padding-bottom:0}
+.r-container--ok .b-history__content > li:nth-child(5) {padding-bottom:150px}
+.r-container--ok .b-history__content > li:nth-child(5):before {content:'';position:absolute;bottom:0;right:0;width:321px;height:51px;background:url(/static/mw/images/renewal/brand/vita500/bg_white.png) no-repeat center top}
+.r-container--ok .b-history__content > li:nth-child(n+6) {background:#fff}
+.r-container--ok .b-history__content:before {background-image:url(/static/mw/images/renewal/brand/oksusu/bg_history.png)}
+.b-campaign__okintro {padding-top:50px;padding-bottom:140px;background :url(/static/mw/images/renewal/brand/oksusu/tit_camp.jpg) no-repeat center top ;background-size:780px auto;background-color:#f1ecd0}
+.b-campaign__okdesc {margin-top:995px;font-size:30px;line-height:44px;color:#333;word-break:keep-all}
+.r-container--ok .bd-event__cat {width:290px}
+.r-container--ok .b-campicture {position:relative;padding-bottom:150px}
+.common-top {position:absolute;top:-51px;right:0;width:321px;height:51px;background:url(/static/mw/images/renewal/brand/vita500/bg_white.png) no-repeat center top}
+.b-campaign__okvgram {min-height:1430px;padding-bottom:80px;background-image:url(/static/mw/images/renewal/brand/oksusu/bg_vgram.jpg);background-size:780px auto;background-color:#e2dad4}
+.b-campaign__vgram {text-align:center}
+.b-campaign__vgram-slogan {font-size:30px;font-weight:bold;color:#5d3b00}
+.b-campaign__vgram-subtit {font-size:30px;color:#333;letter-spacing:-0.5px}
+.b-campaign__vgram-hash {width:90%;margin:0 auto;margin-top:40px;-webkit-border-radius:50px;border-radius:50px;background:rgba(255,255,255,0.5);font-size:30px;color:#a55e48;font-weight:bold;line-height:86px}
+.bd-event__vgram-list {overflow:hidden;margin-left:-20px}
+.bd-event__vgram-list li {float:left;width:33.3333%;margin-bottom:20px;padding-left:20px;box-sizing:border-box}
+.bd-event__vgram-list li img {width:100%}
+.r-container--ok .b-campicture .b-campicture__tit {color:#905945}
+.r-container--ok .b-media__view-tit {border-top:4px solid #8f9f3d}
+.r-container--ok .b-media__btn a {background:#8f9f3d}
+.r-container--ok .page-navi li.on {background:#8f9f3d}
+/* 헛개차 */
+.r-container--hut .brand-tab a.active {border-color:#aea100;color:#aea100;}
+.b-hut {padding:124px 37px;background:#d6bf3f}
+.b-huttit {font-size:44px;color:#333;line-height:58px;font-weight:bold;text-align:center}
+.b-huttit strong {font-weight:bold;color:#fff}
+.b-huttit:after {content:'';display:block;width:32px;height:4px;margin:0 auto;margin-top:25px;background:#fff}
+.b-hutfeature li {font-size:30px;line-height:48px;color:#333}
+.b-hutfeature > li {position:relative;padding-top:30px;padding-bottom:30px;padding-left:190px;border-bottom:1px solid #aa9a41;word-break:keep-all}
+.b-hutfeature > li:first-child {border-top:1px solid #aa9a41}
+.b-hutfeature > li strong {position:absolute;top:50%;left:0;margin-top:-24px;font-weight:bold}
+.b-hutfeature__inner li {position:relative;margin-top:20px;padding-left:14px;line-height:40px}
+.b-hutfeature__inner li:first-child {margin-top:0}
+.b-hutfeature__inner li:before {content:'';position:absolute;top:20px;left:0;width:6px;height:6px;-webkit-border-radius:3px;border-radius:3px;background:#333}
+.r-container--hut .b-history {padding-bottom:100px}
+.r-container--hut .b-history__content .y ,.r-container--hut .b-common__tab.active .b-common__current {color:#aa9a41}
+.r-container--hut .b-media__view-tit {border-top:4px solid #aa9a41}
+.r-container--hut .page-navi li.on, .r-container--hut .b-media__btn a {background:#aa9a41}
+.b-hut2 {padding:92px 37px 130px 37px}
+.b-hutdesc {margin-bottom:45px;font-size:30px;color:#333;line-height:44px;word-break:keep-all;letter-spacing:-2px;word-spacing:-1.5px}
+.b-hutlist li {padding:32px 0;border-bottom:3px solid #e1e1e1}
+.b-hutlist li:first-child {border-top:3px solid #e1e1e1}
+.b-hutlist li strong {display:block;margin-bottom:14px;font-weight:bold;font-size:32px}
+.b-hutlist li strong span {display:inline-block;vertical-align:middle;color:#aa9a41;font-size:26px;line-height:32px}
+.b-hutlist li .d {font-size:24px;color:#333;line-height:36px;word-break:keep-all}
+.b-hutlist li .d2 {margin-top:8px}
+.b-hutimg2 {position:absolute;right:0px;bottom:70px}
+/* 헛개차 리뉴얼 202407 */
+.b-hut3 {padding:124px 37px; background:#fff}
+.b-hut3 .b-hut__wrap-tit {font-size:30px; color:#000; text-align:center;}
+.b-hut3 .b-hut__wrap-tit .b-huttit {margin-top:20px; font-size:44px; color:#000; line-height:58px; font-weight:bold; text-align:center}
+.b-hut3 .b-hut__wrap-tit .b-huttit:after {display:none;}
+.b-hut3 .b-hutdesc dt {position:relative; padding-left:20px; font-size:32px; font-weight:bold; color:#333; line-height:44px; letter-spacing:-.5px;}
+.b-hut3 .b-hutdesc dt:before {content:''; display:block; position:absolute; top:0; left:0; width:2px; height:100%; background:#333; }
+.b-hut3 .b-hutdesc dd {margin-top:30px; font-size:30px; color:#333; line-height:44px; word-break:keep-all; text-align:left; letter-spacing:-.5px;}
+.b-hut3 .b-hutdesc p.source {margin-top:20px; font-size:25px; }
+.b-hut4 {padding:124px 0 0; background:#fcf3d6}
+.b-hut4 .b-hut__wrap-tit {margin-bottom:40px; font-size:44px; color:#000; line-height:58px; font-weight:bold; text-align:center}
+
+/*야왕*/
+.r-container--ya .brand-tab a.active {border-color:#f0bb0d;color:#f0bb0d}
+.b-ya {padding:70px 37px;padding-bottom:150px;background:url(/static/mw/images/renewal/brand/yawang/bg_info01.jpg) no-repeat center top;background-size:cover}
+.r-container--ya .b-huttit strong {color:#f9d049}
+.r-container--ya .b-huttit:after {background:#f9d049}
+.b-yasubtit {margin-top:30px;font-size:36px;color:#fff;text-align:center;font-weight:normal}
+.r-container--ya .b-hutfeature li {border-color:#797979}
+.b-yadesc  {margin-bottom:35px;font-size:30px;color:#fff;line-height:44px;word-break:keep-all}
+.b-ya2 {padding:160px 37px;background:url(/static/mw/images/renewal/brand/yawang/bg_info02.jpg) no-repeat center top;background-size:cover}
+.b-yainfo {text-align:center;font-size:30px;color:#fff;line-height:44px}
+.b-yainfo .i {margin-top:120px;margin-bottom:28px}
+.b-ya3 {padding:160px 37px;background:url(/static/mw/images/renewal/brand/yawang/bg_info03.jpg) no-repeat center top;background-size:cover}
+.b-yainfolist li {position:relative;margin-top:80px;padding-left:225px;padding-top:30px;padding-bottom:30px}
+.b-yainfolist li .d {font-size:30px;line-height:44px;color:#e3e3e3;word-break:keep-all}
+.b-yainfolist li .i {position:absolute;top:50%;left:0;margin-top:-95px}
+.b-yainfolist li .d strong {display:block;font-weight:bold}
+.r-container--ya .b-common__tab.active .b-common__current {color:#f0bb0d}
+.r-container--ya .b-media__view-tit {border-top:4px solid #f0bb0d}
+.r-container--ya .page-navi li.on, .r-container--ya .b-media__btn a {background:#f0bb0d}
+.r-container--ya .b-hutfeature li {color:#fff}
+/*아이톡*/
+.b-itok1 {padding:50px 37px;background:#5ec0ff}
+.b-itoktit {font-size:36px;color:#333;font-weight:bold;line-height:48px;text-align:center}
+.b-itoktit4 {margin-bottom:50px;font-size:44px;color:#333;font-weight:bold;line-height:54px;text-align:center}
+.b-itok1 .i {text-align:center}
+.bd-itoklist li {position:relative;padding:12px 0;padding-left:188px;border-bottom:1px solid #86d0ff;font-size:30px;color:#fff;line-height:44px}
+.bd-itoklist li:first-child {border-top:1px solid #86d0ff}
+.bd-itoklist li strong {position:absolute;top:50%;left:0;margin-top:-22px;font-weight:bold;font-size:30px}
+.bd-itoklist li em {font-style:normal;color:#333}
+.b-itok2 {min-height:1225px;padding-top:175px;padding-left:37px;padding-right:37px;background:url(/static/mw/images/renewal/brand/eyetok/bg_itok01.jpg) no-repeat center top;background-size:780px auto}
+.b-itoktit2 {font-size:44px;font-weight:bold;text-align:center;color:#333}
+.b-itoktit2 strong {font-weight:bold;color:#0091e4}
+.b-itoktit2:after {content:'';display:block;width:32px;height:4px;margin:0 auto;margin-top:15px;background:#0091e4;}
+.b-itoklist2 {margin-top:90px}
+.b-itoklist2 li strong {display:block;margin-bottom:10px;font-size:32px;color:#333;font-weight:bold}
+.b-itoklist2 li {padding-top:40px;padding-bottom:24px;border-top:3px solid #e7e1db;font-size:24px;color:#333;line-height:42px;word-break:keep-all}
+.b-itoklist2 li span {color:#0091e4}
+.b-itoklist2 .i {margin-top:20px;text-align:center}
+.b-itok3 {padding:160px 37px;background:#5ec0ff}
+.b-itok3 .b-itoktit2 {color:#fff;}
+.b-itok3 .b-itoktit2:after {background:#fff}
+.b-itoklist3 {text-align:center}
+.b-itoklist3 .t {margin-top:30px;margin-bottom:5px;font-size:34px;color:#fff}
+.b-itoklist3 li {margin-top:135px}
+.b-itoklist3 .d {font-size:30px;color:#333}
+.b-itok4 {padding:80px 37px;padding-bottom:120px}
+.b-itoktable {table-layout:fixed;width:100%;margin-top:40px;text-align:center}
+.b-itoktable th {padding:10px 0;font-size:30px;color:#fff;background:#21a2e8}
+.b-itoktable td {padding:20px 0;border-bottom:1px solid #21a2e8}
+.b-itoktable td.b {font-weight:bold}
+.b-itok5 {padding:100px 37px;background:#d7f1ff}
+.b-itokdesc {margin-top:80px;font-size:30px;color:#333;line-height:50px}
+.b-phsearch {padding-top:100px}
+.b-phsearch .b-itoktit2 {margin-bottom:50px}
+.pharmacy_frame.eyetok .search .f4 a {background:#0091e4}
+.pharmacy_frame.eyetok  .in_table table {border-color:#0091e4}
+.pharmacy_frame.eyetok .in_table table td .view {color:#0091e4}
+.pharmacy_frame.redormin .paging > span > strong {background:#0091e4;border-color:#0091e4}
+.r-container--itok .brand-tab a.active {border-color:#0091e4;color:#0091e4}
+.r-container--itok .b-common__tab.active .b-common__current {color:#0091e4}
+.r-container--itok .page-navi li.on, .r-container--itok .b-media__btn a {background:#0091e4}
+/*HPMP*/
+.b-hpmp1 {padding:70px 37px;padding-top:140px;padding-bottom:125px;background:url(/static/mw/images/renewal/brand/hpmp/bg_info01.jpg) no-repeat center top;background-size:780px auto}
+.b-hpmp__slogan {font-size:36px;color:#333;line-height:46px;text-align:center;font-weight:400}
+.b-hpmp__tit {margin-top:60px;margin-bottom:30px;font-size:34px;font-weight:bold;line-height:52px;color:#333;letter-spacing:-1px}
+.b-hpmp__tit2 {margin-top:110px;margin-bottom:42px;font-size:44px;color:#fff;font-weight:bold;letter-spacing:-0.04em;line-height:1.2}
+.b-hpmp__tit2 strong {font-size:38px;color:#efda31}
+.b-hpmp__tit strong {color:#333;font-weight:bold;font-size:44px}
+/*.b-hpmp__tit:after {content:'';display:block;width:32px;height:4px;margin-top:20px;background:#fff}*/
+.b-hpmp__desc {font-size:30px;line-height:42px;color:#333;word-break:keep-all;letter-spacing:-1px}
+.b-hpmp__desc2 {color:#fff;letter-spacing:-0.045em}
+.b-hpmp__desc strong {color:#fff}
+.b-hpmp__desc2 strong {color:#efda31}
+.b-hpmp__desc span {display:block;margin-top:32px;margin-bottom:4px}
+.b-hpmp__desc span.r  {color:#d2000d}
+.b-hpmp__desc span.b  {color:#005ead}
+.b-hpmp2 {padding:198px 37px;padding-bottom:169px;background:url(/static/mw/images/renewal/brand/hpmp/bg_info02.jpg) no-repeat center top;background-size:780px auto}
+.b-hpmp3 {padding:198px 37px;padding-bottom:90px;background:url(/static/mw/images/renewal/brand/hpmp/bg_info03.jpg) no-repeat center top;background-size:780px auto}
+.b-hpmp__media {padding:50px 37px;padding-bottom:120px}
+.b-hpmp__media--gray {background:#ececec}
+.b-hpmp__slider {position:relative;padding:0 63px}
+.b-hpmp__big {margin-bottom:40px;text-align:center}
+.r-container--hpmp .brand-tab a.active {border-color:#eb000e;color:#eb000e}
+.r-container--hpmp .b-common__tab.active .b-common__current {color:#eb000e}
+/*레돌민*/
+.b-redormin {padding:130px 37px;background:url(/static/mw/images/renewal/brand/redormin/bg_redormin00.jpg) no-repeat center top;background-color:#6b4ea1}
+.b-redormin__desc {font-size:30px;color:#fff;line-height:44px;word-break:keep-all}
+.b-redormin__desc strong {color:#95df3c}
+.r-container--redormin .bd-itoklist li {border-color:#ae9ecb;word-break:keep-all}
+.r-container--redormin .bd-itoklist li em {color:#95df3c}
+.r-container--redormin .b-common__tab.active .b-common__current {color:#95df3c}
+.b-redormin__img {margin-top:80px}
+.b-redormin2 {padding:95px 37px;padding-bottom:120px;background:#f3f3f3}
+.b-redormin3 {padding:95px 37px;padding-bottom:120px;background:#6b4ea1}
+.common-edge {position:absolute;right:0;top:-50px}
+.b-redormin4 {padding:80px 37px;background:url(/static/mw/images/renewal/brand/redormin/bg_redormin01.jpg) no-repeat center top;background-size:780px auto}
+.b-redormin__tit {font-size:44px;text-align:center;font-weight:bold;color:#fff}
+.b-redormin__tit:after {content:'';display:block;width:32px;height:4px;background:#fff;margin:0 auto;margin-top:20px}
+.b-redormin__info {margin-bottom:110px;margin-top:35px;font-size:30px;line-height:44px;text-align:center;color:#fff}
+.b-redormin__info strong {font-weight:bold;color:#ff7e00}
+.b-redormin4  .b-redormin__tit {margin-top:150px}
+.b-redormin5 {padding:80px 37px;padding-top:140px;background:url(/static/mw/images/renewal/brand/redormin/bg_redormin02.jpg) no-repeat center top;background-size:780px auto} 
+.b-redormin5  .b-redormin__tit {color:#333}
+.b-redormin5  .b-redormin__tit:after {background:#333}
+.b-redormin5  .b-redormin__info {color:#333}
+.b-redormin6 {padding-top:180px}
+.b-redormin6  .b-redormin__tit {text-align:left}
+.b-redormin6  .b-redormin__tit:after {margin-left:0}
+.b-redormin7 {padding:80px 37px;padding-bottom:120px;background:url(/static/mw/images/renewal/brand/redormin/bg_redormin03.jpg) no-repeat center top;background-size:780px auto} 
+.b-redormin7  .b-redormin__tit {color:#333}
+.b-redormin7  .b-redormin__tit:after {background:#333}
+.b-redormin7  .b-redormin__tit strong {font-weight:bold;color:#543b83}
+.b-redormin7 .b-redormin__img {margin-top:60px}
+.b-redormin8,  .b-redormin9 {padding:80px 37px;padding-bottom:120px}
+.b-redormin9 {background:#fce3ea}
+.r-container--redormin .brand-tab a.active {border-color:#6bb022;color:#6bb022}
+.r-container--redormin .b-phsearch .b-itoktit2 strong {color:#543b83}
+.r-container--redormin .b-phsearch .b-itoktit2:after  {background:#543b83}
+.pharmacy_frame.redormin .search .f4 a {background:#543b83}
+.pharmacy_frame.redormin  .in_table table {border-color:#543b83}
+.pharmacy_frame.redormin .in_table table td .view {color:#543b83}
+.pharmacy_frame.redormin .paging > span > strong {background:#543b83;border-color:#543b83}
+.b-redorminwrap {position:relative}
+.b-redorminwrap .b-common__tab {position:absolute;top:50px;left:5%;width:90%;z-index:2}
+.b-redorminbox {display:none}
+.b-redorminbox.active {display:block}
+.r-container--redormin .page-navi li.on, .r-container--redormin .b-media__btn a {background:#6bb022}
+
+/*경옥고*/
+.b-ky1 {padding:50px 37px;padding-bottom:120px;background:url(/static/mw/images/renewal/brand/kyungokko/bg_ky01.jpg) no-repeat center top;background-size:780px auto}
+.b-kytit {font-size:44px;font-weight:bold;color:#333;line-height:58px;text-align:center}
+.b-kytit strong {font-weight:bold;color:#7b593c}
+.b-kytit:after {content:'';display:block;width:32px;height:4px;margin:0 auto;margin-top:18px;background:#7b593c}
+.b-kydesc {font-size:30px;color:#333;line-height:44px;word-break:keep-all;text-align:center;letter-spacing:-0.5px}
+.b-ky2 {padding:85px 37px;padding-bottom:120px}
+.b-kylist {text-align:center}
+.b-kylist li {margin-top:120px}
+.b-kylist .t {margin-top:52px;margin-bottom:8px;font-size:32px;font-weight:bold;color:#8e521f}
+.b-ky3 {padding:85px 37px;padding-bottom:120px;background:#f9f6e4}
+.b-kylist2 {text-align:center}
+.b-kylist2 li {display:inline-block;margin-top:76px;padding:0 30px;vertical-align:top}
+.b-kylist2 li .t {margin-top:15px;font-weight:bold;color:#333}
+.b-ky4 {padding:80px 37px;padding-bottom:120px;background:url(/static/mw/images/renewal/brand/kyungokko/bg_ky02.jpg) no-repeat center top;background-size:780px auto}
+.b-kysubtit {margin-top:20px;font-size:30px;color:#333;text-align:center;font-weight:400}
+.b-ky4__desc {margin-top:230px;margin-bottom:85px;text-align:right}
+.b-ky4__img {text-align:center}
+.b-ky5 {padding:85px 37px;padding-top:150px;padding-bottom:80px;background:url(/static/mw/images/renewal/brand/kyungokko/bg_map.jpg) no-repeat center top;background-size:780px auto}
+.b-ky6 {padding:120px 37px;background:url(/static/mw/images/renewal/brand/kyungokko/bg_ky03.jpg) no-repeat center top;background-size:780px auto}
+.b-kyslogan {position:relative;margin-top:65px;margin-bottom:60px;padding:0 50px;font-size:30px;font-weight:bold;color:#8e521f;text-align:center}
+.b-kyslogan span {position:absolute;top:50%;margin-top:-19px}
+.b-kyslogan span.f {left:0}
+.b-kyslogan span.s {right:0}
+.b-kylist3 li {position:relative;padding:62px 0;padding-left:206px;color:#333;font-size:27px;line-height:34px;word-break:keep-all}
+.b-kylist3 li .i {position:absolute;top:50%;left:0;margin-top:-95px}
+.b-kylist3 li strong {display:block;margin-bottom:8px;color:#333;font-size:30px}
+.layer-map__desc {margin-top:30px;font-size:22px;color:#333;line-height:34px;word-break:keep-all}
+.layer--map .layer-wrap {margin-right:100px;padding:25px;border-color:#cdad64}
+.layer--map .layer-wrap .layer-body img {width:100%}
+.layer-close {position:absolute;top:-3px;right:-65px} 
+.layer--map .layer-close {background:#cdad64}
+.r-container--ky .brand-tab a.active {border-color:#7b593c;color:#7b593c}
+.r-container--ky .b-phsearch .b-itoktit2 strong {color:#7b593c}
+.r-container--ky .b-phsearch .b-itoktit2:after  {background:#7b593c}
+.r-container--ky .b-phsearch .bd-info__wrap-desc {padding:20px 37px 50px; color:#333; text-align:center; }
+.pharmacy_frame.kyungokko .search .f4 a {background:#cdad64}
+.pharmacy_frame.kyungokko  .in_table table {border-color:#cdad64}
+.pharmacy_frame.kyungokko .in_table table td .view {color:#cdad64}
+.pharmacy_frame.kyungokko .paging > span > strong {background:#cdad64;border-color:#cdad64}
+.r-container--ky .page-navi li.on, .r-container--ky .b-media__btn a {background:#7b593c}
+/*카멕스*/
+.b-carmex1 {padding:110px 37px;padding-bottom:140px;background:#df433c}
+.b-carmextit {font-size:44px;font-weight:bold;color:#fff;line-height:58px;text-align:center}
+.b-carmextit strong {font-weight:bold;color:#fef200}
+.b-carmextit:after {content:'';display:block;width:32px;height:4px;margin:0 auto;margin-top:20px;background:#fef200}
+.b-carmexlist {overflow:hidden;margin-top:80px}
+.b-carmexlist li {float:left;min-height:300px;width:50%;text-align:center;color:#fff}
+.b-carmexlist li .d {margin-top:15px}
+.b-carmexlist li strong {font-weight:bold}
+.b-carmex2 {padding:80px 37px;padding-bottom:140px}
+.b-carmex2 .b-carmextit {color:#333;}
+.b-carmex2 .b-carmextit strong {color:#df433c}
+.b-carmex2 .b-carmextit:after {background:#df433c}
+.b-carmexsubtit {margin-top:20px;font-size:30px;color:#333;line-height:42px;text-align:center}
+.b-carmexlist2 li {position:relative;margin-top:74px;padding-left:260px}
+.b-carmexlist2 li .i {position:absolute;top:0;left:60px}
+.b-carmexlist2 li .t {font-size:24px;color:#333;line-height:38px}
+.b-carmexlist2 li .t1 {font-size:30px;font-weight:bold;color:#333}
+.b-carmexlist2 li .t2 {margin-bottom:5px;font-size:30px;font-weight:bold;color:#df433c}
+.r-container--carmex .b-history__content > li:nth-child(5) {padding-bottom:150px}
+.r-container--carmex .b-history__content > li:nth-child(5):before {content:'';position:absolute;bottom:0;right:0;width:321px;height:51px;background:url(/static/mw/images/renewal/brand/vita500/bg_white.png) no-repeat center top}
+.r-container--carmex .b-history__content > li:nth-child(n+6) {background:#fff}
+.r-container--carmex .b-history__content > li:nth-child(10) {padding-bottom:140px}
+.r-container--carmex .b-history__content > li:nth-child(10):before {content:'';position:absolute;bottom:0;right:0;width:321px;height:51px;background:url(/static/mw/images/renewal/brand/vita500/bg_gray.png) no-repeat center top}
+.r-container--carmex .b-history__content > li:nth-child(n+11) {background:#f4f4f4}
+.r-container--carmex .b-history__content .y {color:#0fb66e}
+.r-container--carmex .b-common__tab.active .b-common__current {color:#0fb66e}
+.r-container--carmex .brand-tab a.active {color:#e41e26;border-color:#e41e26}
+.r-container--carmex .page-navi li.on, .r-container--carmex .b-media__btn a {background:#e41e26}
+/*톡앤톡*/
+.b-tokntok1 {padding:50px 37px 120px 37px;background:url(/static/mw/images/renewal/brand/tokntok/bg_info01.jpg) no-repeat center top;background-size:cover}
+.b-tokntokdesc {margin-bottom:30px;font-size:30px;font-weight:bold;color:#333;line-height:44px}
+.b-tokntok1 .bd-itoklist li {border-color:#b2d9a7}
+.b-tokntok2 .b-itoktit2 {color:#333}
+.b-tokntok2 .b-itoktit2:after {background:#333}
+.b-tokntok2 {padding:110px 37px;padding-bottom:140px;background:#f4f4f4}
+.b-tokntoklist {text-align:center}
+.b-tokntoklist li {margin-top:80px}
+.b-tokntoklist .t {margin-top:50px;margin-bottom:10px;font-size:34px;color:#47b428;font-weight:bold}
+.b-tokntoklist .d {font-size:30px;color:#333;line-height:44px}
+.b-tokntok3 {padding:0px 37px 120px 37px;background:url(/static/mw/images/renewal/brand/tokntok/bg_info02.jpg) no-repeat center top;background-size:780px auto}
+.b-tokntok3 .b-tokntokdesc {margin-bottom:50px}
+.b-tokntok4 {padding:110px 37px;padding-bottom:140px;background:#f4f4f4}
+.b-tokntokdesc2 {font-size:28px;color:#333;line-height:44px;text-align:center}
+.b-tokntoklist2 {text-align:center}
+.b-tokntoklist2 li {margin-top:96px}
+.b-tokntokdesc3 {margin-top:80px;font-size:30px;color:#333;line-height:50px;word-break:keep-all}
+.b-tokntok4 .b-itoklist2 .t {font-weight:bold;margin-top:20px;margin-bottom:2px}
+.b-tokntok4 .b-itoktit2 {color:#48b528}
+.b-tokntok4 .b-itoktit2:after {background:#48b528}
+.b-tokntok4 .b-itoklist2 .b {margin-top:10px}
+.layer-toktit {padding-top:10px;padding-bottom:15px;border-bottom:1px solid #ccc;font-size:32px;font-weight:bold;color:#333;text-align:center}
+.layer-toksubtit {margin-top:25px;font-size:26px;font-weight:bold;line-height:34px;color:#333;word-break:keep-all}
+.layer-toklist li {margin-top:15px;font-size:24px;color:#333;line-height:34px;word-break:keep-all}
+.layer-toklist li strong {display:block;margin-bottom:5px;font-size:24px;font-weight:bold;color:#269b05}
+.layer--tokntok .layer-wrap {padding:30px;padding-bottom:80px;border-color:#2ca40a}
+.layer--tokntok .layer-close {background:#2ca40a}
+/*플레이버워터*/
+.r-container--fw .brand-tab a.active {border-color:#0a96d4;color:#0a96d4}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://www.ekdp.com/inc/search_phamacy.do -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="description" content="광동 판매 약국찾기">
+<meta name="author" content="kwangdong">
+<meta http-equiv="Content-Security-Policy" content="default-src *; 
+				 script-src &#39;self&#39; http://www.google-analytics.com/ga.js &#39;unsafe-inline&#39;; 
+				 style-src &#39;self&#39; http://fonts.googleapis.com/earlyaccess/nanumgothic.css &#39;unsafe-inline&#39;; 
+				 img-src *;">
+<title>광동 판매 약국찾기</title>
+<link rel="stylesheet" href="./common.css">
+<script src="./jquery-1.10.2.min(1).js.다운로드"></script>
+<link rel="stylesheet" href="./common.css">
+<link rel="stylesheet" href="./r_brand.css">
+<!-- <script type="text/javascript" src="http://openapi.map.naver.com/openapi/v3/maps.js?clientId=qHurIpKyL4iBnaxmC9s2"></script> -->
+<script type="text/javascript" src="./maps.js.다운로드"></script>
+
+<style type="text/css">
+body{width:auto}
+</style>
+<script>
+function search(){
+	m_product_no = $("#m_product_no").val();
+	s_Keyword = $("#s_Keyword").val();
+	m_si = $("#m_si").val();
+	m_do = $("#m_do").val();
+	brandID = "";
+	location.href="search_phamacy.do?s_Keyword="+s_Keyword+"&m_product_no="+m_product_no+"&m_si="+m_si+"&m_do="+m_do+"&brandID="+brandID;
+}
+</script>
+</head>
+<body style="">
+
+<div class="pharmacy_frame ">
+	<form action="https://www.ekdp.com/inc/search_phamacy.do" method="">
+		<fieldset>
+			<legend>광동 판매 약국 검색조건</legend>
+			<ul class="search">
+				<li class="f1">
+					<div class="cs_select">
+						<select onchange="javascript:search()" name="m_product_no" id="m_product_no">
+						<option value="">제품 선택</option>
+							
+								<option value="87">광동경옥고</option>
+							
+								<option value="96">광동공진단</option>
+							
+								<option value="113">레돌민</option>
+							
+								<option value="646">아이톡씨엠씨점안액</option>
+							
+								<option value="424">아이톡점안액</option>
+							
+						</select>
+					</div>
+				</li>
+				<li class="f2">
+					<div class="cs_select">
+						<select onchange="javascript:search()" name="m_si" id="m_si">
+							<option value="">시/도 선택</option>
+							
+								<option value="강원">강원</option>
+							
+								<option value="경기">경기</option>
+							
+								<option value="경남">경남</option>
+							
+								<option value="경북">경북</option>
+							
+								<option value="광주">광주</option>
+							
+								<option value="대구">대구</option>
+							
+								<option value="대전">대전</option>
+							
+								<option value="부산">부산</option>
+							
+								<option value="서울">서울</option>
+							
+								<option value="세종">세종</option>
+							
+								<option value="울산">울산</option>
+							
+								<option value="인천">인천</option>
+							
+								<option value="전남">전남</option>
+							
+								<option value="전북">전북</option>
+							
+								<option value="제주">제주</option>
+							
+								<option value="충남">충남</option>
+							
+								<option value="충북">충북</option>
+								
+						</select>
+					</div>
+				</li>
+				<li class="f3">
+					<div class="cs_select">
+						<select onchange="javascript:search()" name="m_do" id="m_do">
+							<option value="">구/군 선택</option>
+								
+						</select>
+					</div>
+				</li>
+				<li class="f4"><input type="text" title="도로명 주소 또는 동/읍/면을 입력해주세요" placeholder="도로명 주소 또는 동/읍/면을 입력해주세요" name="s_Keyword" id="s_Keyword" value=""><a href="javascript:search();">검색</a></li>
+			</ul>
+		</fieldset>
+	</form>
+	<div id="in_map" style="display:none"></div>
+	<div class="in_table">
+		<table>
+			<caption>약국 게시판</caption>
+				<colgroup>
+					<col style="width:16%">
+					<col style="width:32%">
+					<col style="width:32%">
+					<col style="width:20%">
+				</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">지역</th>
+					<th scope="col">약국명</th>
+					<th scope="col">전화번호</th>
+					<th scope="col">지도보기</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+					
+						
+							<tr>
+								<td>인천</td>
+								<td class="tleft">(S)미추홀온누리약국</td>
+								<td class="tleft"><a href="tel:312617578">312617578</a></td>
+								<!-- <td><a href="javascript:remarker(,)" class="view">보기</a></td> -->
+								<td><a href="https://map.naver.com/?isDetailAddress=true&amp;query=%EC%9D%B8%EC%B2%9C%20%EB%AF%B8%EC%B6%94%ED%99%80%EA%B5%AC%20%EC%97%BC%EC%A0%84%EB%A1%9C168%EB%B2%88%EA%B8%B8%2015%20(%EB%8F%84%ED%99%94%EB%8F%99)" target="_blank" class="view">보기</a></td>
+							</tr>
+						
+							<tr>
+								<td>광주</td>
+								<td class="tleft">(주)광주지오팜</td>
+								<td class="tleft"><a href="tel:"></a></td>
+								<!-- <td><a href="javascript:remarker(,)" class="view">보기</a></td> -->
+								<td><a href="https://map.naver.com/?isDetailAddress=true&amp;query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EA%B4%91%EC%82%B0%EA%B5%AC%20%EB%8F%99%EA%B3%A1%EB%A1%9C%20813_(%EC%9A%B4%EC%88%98%EB%8F%99)" target="_blank" class="view">보기</a></td>
+							</tr>
+						
+							<tr>
+								<td>대전</td>
+								<td class="tleft">(주)대전동원약품</td>
+								<td class="tleft"><a href="tel:042-622-9999">042-622-9999</a></td>
+								<!-- <td><a href="javascript:remarker(,)" class="view">보기</a></td> -->
+								<td><a href="https://map.naver.com/?isDetailAddress=true&amp;query=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EC%95%84%EB%A6%AC%EB%9E%91%EB%A1%9C%20121_(%EC%9D%8D%EB%82%B4%EB%8F%99)" target="_blank" class="view">보기</a></td>
+							</tr>
+						
+							<tr>
+								<td>대전</td>
+								<td class="tleft">(주)대전지오팜</td>
+								<td class="tleft"><a href="tel:042-546-0044">042-546-0044</a></td>
+								<!-- <td><a href="javascript:remarker(,)" class="view">보기</a></td> -->
+								<td><a href="https://map.naver.com/?isDetailAddress=true&amp;query=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9C%A0%EC%84%B1%EB%8C%80%EB%A1%9C%2036_(%EC%9B%90%EB%82%B4%EB%8F%99)" target="_blank" class="view">보기</a></td>
+							</tr>
+						
+							<tr>
+								<td>광주</td>
+								<td class="tleft">(주)데이팜</td>
+								<td class="tleft"><a href="tel:062-954-7337">062-954-7337</a></td>
+								<!-- <td><a href="javascript:remarker(,)" class="view">보기</a></td> -->
+								<td><a href="https://map.naver.com/?isDetailAddress=true&amp;query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%EC%9E%90%EB%9D%BC%EB%B4%89%EB%A1%9C63%EB%B2%88%EA%B8%B8%2026" target="_blank" class="view">보기</a></td>
+							</tr>
+						
+					
+					
+				
+			</tbody>
+		</table>
+	</div>
+		<div class="paging">
+		
+		
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+		
+					
+		
+	
+
+5
+	
+	
+		
+			
+						
+			
+			
+		
+		
+	
+	
+		
+			
+			
+						
+			
+		
+		
+	
+	
+		
+			
+			
+						
+			
+		
+		
+	
+	
+		
+			
+			
+						
+			
+		
+		
+	
+	
+		
+			
+			
+						
+			
+		
+		
+	
+	
+		
+			
+					
+		
+		
+	
+	
+
+	<a href="https://www.ekdp.com/inc/search_phamacy.do#" onclick="return false" class="prev off">◀</a><span><strong>1</strong><a href="https://www.ekdp.com/inc/search_phamacy.do?&amp;brandId=&amp;s_Keyword=&amp;m_product_no=0&amp;m_si=&amp;m_do=&amp;page=2" page="2">2</a><a href="https://www.ekdp.com/inc/search_phamacy.do?&amp;brandId=&amp;s_Keyword=&amp;m_product_no=0&amp;m_si=&amp;m_do=&amp;page=3" page="3">3</a><a href="https://www.ekdp.com/inc/search_phamacy.do?&amp;brandId=&amp;s_Keyword=&amp;m_product_no=0&amp;m_si=&amp;m_do=&amp;page=4" page="4">4</a><a href="https://www.ekdp.com/inc/search_phamacy.do?&amp;brandId=&amp;s_Keyword=&amp;m_product_no=0&amp;m_si=&amp;m_do=&amp;page=5" page="5">5</a></span><a href="https://www.ekdp.com/inc/search_phamacy.do?&amp;brandId=&amp;s_Keyword=&amp;m_product_no=0&amp;m_si=&amp;m_do=&amp;page=6" page="6" title="다음 5 페이지" class="next off">▶</a>
+
+
+	</div>
+</div>
+<script type="text/javascript">
+//지도를 삽입할 HTML 엘리먼트 또는 HTML 엘리먼트의 id를 지정합니다.
+var mapDiv = document.getElementById('in_map'); // 'map' 으로 선언해도 동일
+
+//옵션 없이 지도 객체를 생성하면 서울시청을 중심으로 하는 11레벨의 지도가 생성됩니다.
+	var map = new naver.maps.Map('in_map', {
+        center: new naver.maps.LatLng(, ), //지도의 초기 중심 좌표
+        zoom: 12, //지도의 초기 줌 레벨 1~14
+        minZoom: 1, //지도의 최소 줌 레벨 1~14
+        zoomControl: true, //줌 컨트롤의 표시 여부
+        zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+        }
+    });
+
+	map.setOptions("mapTypeControl", false); //지도 유형 컨트롤의 표시 여부
+
+
+	map.setOptions({ //모든 지도 컨트롤 숨기기
+		scaleControl: false,
+		logoControl: false,
+		mapDataControl: false,
+		zoomControl: false,
+		mapTypeControl: false
+	});
+
+	var marker = new naver.maps.Marker({
+		position: new naver.maps.LatLng(, ),
+		map: map
+	});
+
+
+</script>
+<script>
+function remarker(map_y,map_x,map_title){
+	map = new naver.maps.Map('in_map', {
+        center: new naver.maps.LatLng(map_y, map_x), //지도의 초기 중심 좌표
+        zoom: 12, //지도의 초기 줌 레벨 1~14
+        minZoom: 1, //지도의 최소 줌 레벨 1~14
+        zoomControl: false, //줌 컨트롤의 표시 여부
+        zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+        }
+    });
+
+	map.setOptions("mapTypeControl", false); //지도 유형 컨트롤의 표시 여부
+
+	var marker = new naver.maps.Marker({
+		position: new naver.maps.LatLng(map_y, map_x),
+		map: map
+	});
+}
+</script>
+
+</body></html>
